@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  color: #124b3d;
+  background: #fbf7eb;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 3px solid #d7ad55;
+  outline-offset: 4px;
+}
+
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 24px 110px;
+  background:
+    radial-gradient(ellipse at 50% 25%, #ffffff 0%, transparent 55%),
+    linear-gradient(150deg, #f7f0dc, #fffdf7 60%, #f2ebd7);
+}
+
+.topbar {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: start;
+}
+
+.icon-button {
+  border: 0;
+  background: transparent;
+  color: #155444;
+  font-size: 27px;
+  padding: 6px;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand-symbol {
+  color: #c79b43;
+  font-size: 36px;
+}
+
+.brand h1 {
+  font-family: 'Amiri', serif;
+  font-size: clamp(42px, 8vw, 64px);
+  line-height: 1;
+  margin: 0;
+  color: #064b3b;
+}
+
+.brand p {
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 12px 0 0;
+}
+
+.main-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.dhikr-card {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 16px;
+  border: 1px solid #e8d19a;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 25px #765c2410;
+}
+
+.arrow-button {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: #e8eee3;
+  color: #155444;
+  font-size: 32px;
+}
+
+.dhikr-text {
+  text-align: center;
+  min-width: 0;
+}
+
+.dhikr-text h2 {
+  font-family: 'Amiri', serif;
+  font-size: clamp(24px, 5vw, 34px);
+  margin: 0 0 3px;
+}
+
+.dhikr-text h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.dhikr-text p {
+  margin: 5px 0 0;
+  color: #71917c;
+  font-size: 13px;
+}
+
+.counter-section {
+  text-align: center;
+  margin: 35px 0 12px;
+}
+
+.counter-circle {
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px double #d8b35f;
+
+  background:
+    radial-gradient(
+      circle at 35% 25%,
+      #17604b,
+      #064333 68%,
+      #032e25
+    );
+
+  color: #fffdf5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  margin: 0 auto;
+
+  box-shadow:
+    0 0 0 4px #f5e6b8,
+    0 12px 25px #173e3028,
+    inset 0 0 0 3px #276b54;
+
+  transition: transform 0.15s ease;
+}
+.counter-circle:active,
+.tasbeeh-button:active,
+.round-control:active {
+  transform: scale(0.96);
+}
+
+.mosque-icon {
+  color: #e5c476;
+  font-size: 30px;
+}
+
+.count-number {
+  font-size: clamp(60px, 13vw, 90px);
+  line-height: 1.05;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #e9dcb6;
+}
+
+.beads {
+  color: #e7c46e;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.tap-hint {
+  color: #829385;
+  font-size: 12px;
+  margin: 20px 0 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(18px, 6vw, 35px);
+  margin: 28px 0;
+}
+
+.round-control,
+.tasbeeh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.round-control {
+  width: 76px;
+  height: 76px;
+  border: 1.5px solid #8aa895;
+  background: #f2f4e9;
+  color: #145340;
+  font-size: 42px;
+}
+
+.tasbeeh-button {
+  width: 104px;
+  height: 104px;
+  border: 4px double #e0bc63;
+  background: linear-gradient(145deg, #1c6a52, #034131);
+  color: white;
+  box-shadow: 0 8px 20px #174b3526;
+}
+
+.tasbeeh-button span {
+  font-size: 38px;
+}
+
+.tasbeeh-button small {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.reset-button {
+  display: block;
+  margin: 0 auto 28px;
+  min-width: 190px;
+  padding: 12px 26px;
+  border: 1px solid #8aa895;
+  border-radius: 30px;
+  background: #edf1e5;
+  color: #155444;
+  font-weight: 600;
+}
+
+.reset-button span {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.quote-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 18px 12px;
+  border: 1px solid #d6ddc9;
+  border-radius: 22px;
+  background: #f8f7ed;
+  text-align: center;
+}
+
+.quote-card p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.quote-card small {
+  color: #688773;
+}
+
+.quote-decoration {
+  color: #c7a24c;
+  font-size: 24px;
+}
+
+.bottom-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 8px 12px;
+  border-top: 1px solid #e9e2d1;
+  border-radius: 28px 28px 0 0;
+  background: rgba(255, 253, 247, 0.96);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 55px;
+  border: 0;
+  background: transparent;
+  color: #82938a;
+}
+
+.nav-item span {
+  font-size: 27px;
+}
+
+.nav-item small {
+  font-size: 11px;
+}
+
+.nav-item.active {
+  color: #07503e;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .app {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .bottom-nav {
+    position: static;
+    max-width: 650px;
+    margin: 35px auto 0;
+    border: 1px solid #e9e2d1;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .app {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .dhikr-card {
+    grid-template-columns: 36px 1fr 36px;
+    padding: 14px 9px;
+  }
+
+  .arrow-button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .round-control {
+    width: 65px;
+    height: 65px;
+  }
+
+  .tasbeeh-button {
+    width: 90px;
+    height: 90px;
+  }
+}
